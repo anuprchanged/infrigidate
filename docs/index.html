@@ -1,0 +1,738 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Infrigidate Engineers India: HVAC and integrated MEP contracting for pharmaceutical, healthcare, cleanroom and industrial facilities across India. Offices in Pune and Indore.">
+<meta property="og:title" content="Infrigidate Engineers India">
+<meta property="og:description" content="HVAC & integrated MEP contracting for critical facilities across India.">
+<meta property="og:image" content="img/rajaram-duct.jpg">
+<link rel="icon" href="img/infrigidate-logo.png">
+<title>Infrigidate | HVAC &amp; MEP Contractor for Critical Facilities</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,400..800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --navy:#062a45; --brand:#004777; --brand-2:#0a6aa8; --signal:#15a6c9;
+  --ice:#eaf2f7; --frost:#f5f8fa; --line:#d6e1e8; --steel:#566877; --ink:#0d1b26; --paper:#ffffff;
+  --display:"Archivo","Arial Narrow",Arial,sans-serif;
+  --body:"IBM Plex Sans","Segoe UI",Arial,sans-serif;
+  --mono:"IBM Plex Mono",Consolas,monospace;
+  --wrap:1200px; --gut:clamp(16px,4vw,40px);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 var(--body);-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3,h4{font-family:var(--display);font-stretch:92%;line-height:1.08;margin:0;text-wrap:balance;letter-spacing:-.01em}
+h1{font-size:clamp(2.3rem,5.4vw,4.4rem);font-weight:750}
+h2{font-size:clamp(1.8rem,3.4vw,2.8rem);font-weight:700}
+h3{font-size:1.3rem;font-weight:650}
+p{margin:0}
+.wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:var(--gut)}
+.eyebrow{font:500 .76rem/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--brand-2);display:flex;align-items:center;gap:10px}
+.eyebrow::before{content:"";width:22px;height:2px;background:var(--signal)}
+.lede{font-size:1.12rem;color:var(--steel);max-width:62ch}
+section{padding-block:clamp(56px,8vw,104px)}
+.sec-head{display:grid;gap:14px;margin-bottom:40px;max-width:760px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 22px;font:600 .95rem/1 var(--body);text-decoration:none;border:1.5px solid transparent;cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.btn-primary{background:var(--signal);color:#04202f}
+.btn-primary:hover{background:#34bfe0}
+.btn-ghost{border-color:rgba(255,255,255,.55);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.1)}
+.btn-dark{background:var(--brand);color:#fff}
+.btn-dark:hover{background:var(--navy)}
+.btn-line{border-color:var(--brand);color:var(--brand)}
+.btn-line:hover{background:var(--brand);color:#fff}
+.arrow::after{content:"→";font-family:var(--mono)}
+:focus-visible{outline:3px solid var(--signal);outline-offset:2px}
+
+/* utility + header */
+.util{background:var(--navy);color:#b9ccda;font:400 .8rem/1 var(--mono)}
+.util .wrap{display:flex;justify-content:space-between;gap:16px;padding-block:9px;flex-wrap:wrap}
+.util span{display:inline-flex;gap:18px;flex-wrap:wrap}
+.util a{text-decoration:none}
+.util a:hover{color:#fff}
+header.site{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(255,255,255,.97);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header.site .wrap{display:flex;align-items:center;gap:24px;min-height:74px}
+.logo img{height:30px;width:auto}
+nav.main{display:flex;gap:4px;margin-left:auto}
+nav.main a{white-space:nowrap;text-decoration:none;font:500 .93rem/1 var(--body);padding:10px 12px;color:var(--ink);border-bottom:2px solid transparent}
+nav.main a:hover,nav.main a[aria-current="page"]{color:var(--brand);border-bottom-color:var(--signal)}
+header .cta{padding:11px 18px}
+.burger{display:none;margin-left:auto;background:none;border:1px solid var(--line);width:44px;height:44px;cursor:pointer;font-size:1.3rem;color:var(--brand)}
+@media (max-width:1180px){
+  nav.main{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;background:#fff;border-bottom:1px solid var(--line);padding:8px var(--gut) 16px}
+  nav.main.open{display:flex}
+  nav.main a{padding:14px 0;border-bottom:1px solid var(--line)}
+  .burger{display:block}
+  header .cta{display:none}
+}
+
+/* hero */
+.hero{position:relative;color:#fff;background:var(--navy);overflow:hidden;padding-block:0}
+.hero .bg{position:absolute;inset:0;background:url(img/rajaram-duct.jpg) center/cover}
+.hero .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(4,26,44,.94) 0%,rgba(4,26,44,.78) 48%,rgba(4,26,44,.35) 100%)}
+.hero .wrap{position:relative;padding-block:clamp(72px,11vw,140px) 0;display:grid;gap:26px}
+.hero h1{max-width:15ch}
+.hero .lede{color:#cfdde8;font-size:1.2rem}
+.hero .actions{display:flex;gap:12px;flex-wrap:wrap}
+.hero .eyebrow{color:#8fd8ec}
+.plate{margin-top:clamp(40px,6vw,72px);display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid rgba(255,255,255,.18)}
+.plate div{padding:22px 20px 26px 0;border-right:1px solid rgba(255,255,255,.14)}
+.plate div+div{padding-left:22px}
+.plate div:last-child{border-right:0}
+.plate b{display:block;font:700 clamp(1.8rem,3vw,2.5rem)/1 var(--display);font-stretch:85%;color:#fff}
+.plate small{font:400 .78rem/1.3 var(--mono);color:#9fb6c7;letter-spacing:.06em;text-transform:uppercase;display:block;margin-top:8px}
+@media (max-width:720px){.plate{grid-template-columns:1fr 1fr}.plate div:nth-child(2){border-right:0}.plate div:nth-child(3){padding-left:0}.plate div{border-bottom:1px solid rgba(255,255,255,.14)}}
+
+/* page hero (inner) */
+.phero{background:var(--navy);color:#fff;padding-block:clamp(56px,8vw,96px) clamp(40px,6vw,64px);position:relative;overflow:hidden}
+.phero .bg{position:absolute;inset:0;background-size:cover;background-position:center;opacity:.28}
+.phero .wrap{position:relative;display:grid;gap:18px}
+.phero .eyebrow{color:#8fd8ec}
+.phero .lede{color:#cfdde8}
+.crumbs{font:400 .8rem/1 var(--mono);color:#9fb6c7}
+.crumbs a{text-decoration:none}
+
+/* grids */
+.split{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(32px,5vw,72px);align-items:center}
+.split img{width:100%;aspect-ratio:4/3;object-fit:cover}
+@media (max-width:860px){.split{grid-template-columns:1fr}}
+.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.tile{background:#fff;padding:28px 24px 30px;display:grid;gap:12px;align-content:start;text-decoration:none;transition:background .2s}
+a.tile:hover{background:var(--ice)}
+.tile .ic{width:44px;height:44px;color:var(--brand)}
+.tile p{color:var(--steel);font-size:.95rem}
+.tile .more{font:500 .82rem/1 var(--mono);color:var(--brand-2);margin-top:4px}
+.frost{background:var(--frost)}
+.ice{background:var(--ice)}
+
+/* industries */
+.inds{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media (max-width:900px){.inds{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.inds{grid-template-columns:1fr}}
+.ind{position:relative;min-height:220px;display:flex;align-items:flex-end;color:#fff;text-decoration:none;overflow:hidden;background:var(--navy)}
+.ind img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.55;transition:transform .5s,opacity .3s}
+.ind:hover img{transform:scale(1.04);opacity:.4}
+.ind div{position:relative;padding:22px;display:grid;gap:6px}
+.ind small{font:400 .8rem/1.4 var(--mono);color:#cfe3ef}
+
+/* lifecycle */
+.life{display:grid;grid-template-columns:repeat(4,1fr);counter-reset:s;border-top:2px solid var(--brand)}
+.life li{list-style:none;padding:22px 20px 26px 0;border-bottom:1px solid var(--line);counter-increment:s;display:grid;gap:8px;align-content:start}
+.life li+li{padding-left:0}
+.life li::before{content:counter(s,decimal-leading-zero);font:500 .8rem/1 var(--mono);color:var(--signal)}
+.life b{font:650 1.05rem/1.25 var(--display);font-stretch:95%}
+.life span{font-size:.9rem;color:var(--steel)}
+.life{padding:0;margin:0;column-gap:28px}
+@media (max-width:860px){.life{grid-template-columns:1fr 1fr}}
+@media (max-width:480px){.life{grid-template-columns:1fr}}
+
+/* projects */
+.projs{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+@media (max-width:960px){.projs{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.projs{grid-template-columns:1fr}}
+.pcard{display:grid;grid-template-rows:auto 1fr;text-decoration:none;border:1px solid var(--line);background:#fff;transition:border-color .2s,transform .2s}
+.pcard:hover{border-color:var(--brand-2);transform:translateY(-3px)}
+.pcard img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.pcard .b{padding:20px 20px 22px;display:grid;gap:10px;align-content:start}
+.pcard .sec{font:500 .74rem/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--brand-2)}
+.pcard p{font-size:.93rem;color:var(--steel)}
+.spec{display:flex;flex-wrap:wrap;gap:6px}
+.spec span{font:500 .74rem/1 var(--mono);padding:6px 8px;background:var(--ice);color:var(--brand)}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px}
+.filters button{font:500 .85rem/1 var(--body);padding:10px 14px;border:1px solid var(--line);background:#fff;cursor:pointer;color:var(--ink)}
+.filters button[aria-pressed="true"]{background:var(--brand);color:#fff;border-color:var(--brand)}
+
+/* project detail */
+.pd-top{display:grid;grid-template-columns:1.4fr 1fr;gap:clamp(28px,4vw,56px);align-items:start}
+@media (max-width:900px){.pd-top{grid-template-columns:1fr}}
+.nameplate{border:1.5px solid var(--brand);background:var(--frost);font-family:var(--mono);font-size:.86rem}
+.nameplate header{background:var(--brand);color:#fff;padding:12px 16px;display:flex;justify-content:space-between;letter-spacing:.12em;text-transform:uppercase;font-size:.74rem}
+.nameplate dl{margin:0;display:grid;grid-template-columns:auto 1fr}
+.nameplate dt,.nameplate dd{margin:0;padding:11px 16px;border-top:1px solid var(--line)}
+.nameplate dt{color:var(--steel);text-transform:uppercase;font-size:.72rem;letter-spacing:.08em;padding-right:8px}
+.nameplate dd{color:var(--ink)}
+.story{display:grid;gap:26px}
+.story h3{color:var(--brand)}
+.story p{color:#2c3e4b;max-width:66ch}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px}
+.gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;background:var(--ice)}
+.gallery figure{margin:0}
+.gallery figcaption{font:400 .76rem/1.4 var(--mono);color:var(--steel);padding-top:6px}
+
+/* why */
+.why{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,.14)}
+.why div{background:var(--navy);padding:26px 22px;display:grid;gap:8px;align-content:start}
+.why b{font:650 1.08rem/1.25 var(--display);color:#fff}
+.why span{font-size:.9rem;color:#a9bfcf}
+@media (max-width:900px){.why{grid-template-columns:1fr 1fr}}
+@media (max-width:480px){.why{grid-template-columns:1fr}}
+.dark{background:var(--navy);color:#fff}
+.dark .eyebrow{color:#8fd8ec}
+.dark .lede{color:#b9ccda}
+
+/* standards / logos */
+.stds{display:flex;flex-wrap:wrap;gap:10px}
+.stds span{font:600 .95rem/1 var(--display);font-stretch:90%;letter-spacing:.04em;padding:14px 18px;border:1px solid var(--line);background:#fff;color:var(--brand)}
+.marquee{overflow:hidden;mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.marquee .track{display:flex;gap:56px;width:max-content;animation:scroll 38s linear infinite;align-items:center}
+.marquee img{height:54px;width:auto;object-fit:contain;filter:grayscale(1);opacity:.75;transition:filter .2s,opacity .2s}
+.marquee img:hover{filter:none;opacity:1}
+@keyframes scroll{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.marquee .track{animation:none;flex-wrap:wrap;width:auto}}
+.logos-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.logos-grid div{background:#fff;display:grid;place-items:center;padding:26px 18px;min-height:120px}
+.logos-grid img{max-height:64px;width:auto;object-fit:contain}
+
+/* lists */
+.checks{display:grid;gap:12px;padding:0;margin:0}
+.checks li{list-style:none;display:grid;grid-template-columns:20px 1fr;gap:12px;color:#2c3e4b}
+.checks li::before{content:"";width:12px;height:12px;margin-top:7px;border:2px solid var(--signal);transform:rotate(45deg)}
+.cols2{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,64px)}
+@media (max-width:760px){.cols2{grid-template-columns:1fr}}
+.block{display:grid;gap:18px;align-content:start}
+.block h3{font-size:1.45rem}
+.sol{display:grid;grid-template-columns:320px 1fr;gap:clamp(24px,4vw,56px);padding-block:40px;border-top:1px solid var(--line)}
+.sol:first-child{border-top:0;padding-top:0}
+@media (max-width:820px){.sol{grid-template-columns:1fr}}
+.sol .num{font:500 .8rem/1 var(--mono);color:var(--signal)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{font-size:.9rem;padding:8px 12px;border:1px solid var(--line);background:#fff}
+
+/* news */
+.news{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+@media (max-width:860px){.news{grid-template-columns:1fr}}
+.news article{border-top:2px solid var(--brand);padding-top:18px;display:grid;gap:10px}
+.news time{font:500 .76rem/1 var(--mono);color:var(--brand-2);text-transform:uppercase;letter-spacing:.1em}
+.news p{color:var(--steel);font-size:.95rem}
+
+/* letters */
+.letters{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+@media (max-width:760px){.letters{grid-template-columns:1fr 1fr}}
+.letters img{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:top;border:1px solid var(--line)}
+
+/* cta band */
+.band{background:linear-gradient(90deg,var(--brand),var(--brand-2));color:#fff;padding-block:56px}
+.band .wrap{display:flex;gap:24px;justify-content:space-between;align-items:center;flex-wrap:wrap}
+.band h2{font-size:clamp(1.5rem,2.6vw,2.2rem);max-width:28ch}
+
+/* contact */
+.offices{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+@media (max-width:700px){.offices{grid-template-columns:1fr}}
+.office{border:1px solid var(--line);padding:26px;display:grid;gap:10px;background:#fff}
+.office .tag{font:500 .74rem/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--brand-2)}
+.office address{font-style:normal;color:#2c3e4b}
+.copyrow{display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-family:var(--mono);font-size:.92rem}
+.copyrow button{font:500 .75rem/1 var(--mono);padding:6px 9px;border:1px solid var(--line);background:var(--frost);cursor:pointer;color:var(--brand)}
+form.enq{display:grid;grid-template-columns:1fr 1fr;gap:16px;background:var(--frost);padding:clamp(20px,3vw,36px);border:1px solid var(--line)}
+form.enq .full{grid-column:1/-1}
+@media (max-width:640px){form.enq{grid-template-columns:1fr}}
+form.enq label{display:grid;gap:6px;font:500 .82rem/1.2 var(--body);color:var(--steel)}
+form.enq input,form.enq select,form.enq textarea{font:400 1rem/1.4 var(--body);padding:12px 13px;border:1px solid #c3d1db;background:#fff;color:var(--ink);width:100%}
+form.enq textarea{min-height:120px;resize:vertical}
+.formmsg{grid-column:1/-1;padding:14px 16px;background:#e3f5ea;color:#17593a;font-size:.95rem}
+
+/* footer */
+footer.site{background:#041a2c;color:#9fb6c7;padding-block:64px 28px;font-size:.92rem}
+footer .fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.4fr;gap:36px}
+@media (max-width:900px){footer .fgrid{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){footer .fgrid{grid-template-columns:1fr}}
+footer h4{font:600 .78rem/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:#fff;margin-bottom:16px}
+footer ul{list-style:none;margin:0;padding:0;display:grid;gap:9px}
+footer a{text-decoration:none}
+footer a:hover{color:#fff}
+footer .logo img{height:26px;margin-bottom:16px}
+footer .bottom{margin-top:48px;padding-top:22px;border-top:1px solid rgba(255,255,255,.1);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font:400 .78rem/1.5 var(--mono)}
+.page[hidden]{display:none!important}
+.fade{animation:fin .45s ease both}
+@keyframes fin{from{opacity:.4;transform:translateY(6px)}}
+@media (prefers-reduced-motion:reduce){.fade{animation:none}}
+</style>
+</head>
+<body>
+
+
+<div class="util"><div class="wrap">
+  <span>PAN India HVAC &amp; Integrated MEP Contracting</span>
+  <span><a href="tel:+919595373634">+91 95953 73634</a><a href="mailto:sales.pune@infrigidate.in">sales.pune@infrigidate.in</a><a href="https://www.linkedin.com/company/infrigidate" target="_blank" rel="noopener">LinkedIn</a></span>
+</div></div>
+
+<header class="site"><div class="wrap">
+  <a class="logo" href="#home" aria-label="Infrigidate home"><img src="img/infrigidate-logo.png" alt="Infrigidate"></a>
+  <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">☰</button>
+  <nav class="main" id="nav">
+    <a href="#about">About</a><a href="#solutions">Solutions</a><a href="#capabilities">Capabilities</a><a href="#industries">Industries</a><a href="#projects">Projects</a><a href="#quality">Quality &amp; Safety</a><a href="#careers">Careers</a><a href="#contact">Contact</a>
+  </nav>
+  <a class="btn btn-dark cta" href="#contact">Request a Proposal</a>
+</div></header>
+
+<main id="app">
+
+<!-- ===================== HOME ===================== -->
+<div class="page" data-page="home">
+  <section class="hero">
+    <div class="bg" role="img" aria-label="HVAC ducting installed by Infrigidate at a pharmaceutical plant"></div>
+    <div class="wrap">
+      <div class="eyebrow">HVAC &amp; Integrated MEP Contracting</div>
+      <h1>Engineering precision environments across India.</h1>
+      <p class="lede">We design, build, commission and maintain HVAC, electrical and control systems for pharmaceutical, healthcare and industrial facilities, with one team accountable from tender to handover.</p>
+      <div class="actions"><a class="btn btn-primary arrow" href="#contact">Request a Proposal</a><a class="btn btn-ghost" href="#projects">Explore Projects</a></div>
+      <div class="plate">
+        <div><b>25+</b><small>Engineering professionals</small></div>
+        <div><b>2</b><small>Regional offices · Pune &amp; Indore</small></div>
+        <div><b>12+</b><small>Industrial clients</small></div>
+        <div><b>2–4</b><small>Months · typical turnkey delivery</small></div>
+      </div>
+    </div>
+  </section>
+
+  <section><div class="wrap split">
+    <div class="block">
+      <div class="eyebrow">Who we are</div>
+      <h2>From design intent to site execution to after-sales performance.</h2>
+      <p class="lede">Infrigidate Engineers India is an independent HVAC contracting company founded by professionals with extensive experience in high-tech HVAC infrastructure. We are built on strong engineering fundamentals, disciplined execution, and transparent handover and service.</p>
+      <ul class="checks">
+        <li>Design-assist mindset supporting clients, consultants and PMCs</li>
+        <li>Single-point execution responsibility</li>
+        <li>Continued involvement beyond commissioning and handover</li>
+      </ul>
+      <div><a class="btn btn-line arrow" href="#about">About Infrigidate</a></div>
+    </div>
+    <img src="img/rajaram-plantroom.jpg" alt="Air handling units and piping in a plant room executed by Infrigidate" loading="lazy">
+  </div></section>
+
+  <section class="frost"><div class="wrap">
+    <div class="sec-head"><div class="eyebrow">Solutions</div><h2>Everything that keeps a critical space in specification.</h2></div>
+    <div class="tiles" id="homeSolutions"></div>
+  </div></section>
+
+  <section><div class="wrap">
+    <div class="sec-head"><div class="eyebrow">Industries</div><h2>Built for regulated and precision facilities.</h2></div>
+    <div class="inds" id="homeInds"></div>
+  </div></section>
+
+  <section class="ice"><div class="wrap">
+    <div class="sec-head"><div class="eyebrow">End-to-end contracting life cycle</div><h2>One accountable team at every stage.</h2></div>
+    <ol class="life" id="homeLife"></ol>
+  </div></section>
+
+  <section><div class="wrap">
+    <div class="sec-head" style="max-width:none;display:flex;justify-content:space-between;align-items:end;flex-wrap:wrap;gap:16px">
+      <div style="display:grid;gap:14px"><div class="eyebrow">Featured projects</div><h2>Recent work.</h2></div>
+      <a class="btn btn-line arrow" href="#projects">View all projects</a>
+    </div>
+    <div class="projs" id="homeProjs"></div>
+  </div></section>
+
+  <section class="dark"><div class="wrap">
+    <div class="sec-head"><div class="eyebrow">Why Infrigidate</div><h2>What makes us different.</h2></div>
+    <div class="why" id="homeWhy"></div>
+  </div></section>
+
+  <section><div class="wrap">
+    <div class="sec-head"><div class="eyebrow">Organisations that trust us</div><h2>Our clients.</h2></div>
+    <div class="marquee"><div class="track" id="marquee"></div></div>
+  </div></section>
+
+  <section class="frost"><div class="wrap">
+    <div class="sec-head"><div class="eyebrow">Standards &amp; compliance</div><h2>Engineered to recognised standards.</h2>
+      <p class="lede">Our engineering and execution practices follow internationally accepted standards and each project's own specifications.</p></div>
+    <div class="stds"><span>ISO CERTIFIED</span><span>GMP</span><span>NABH / WHO</span><span>ASHRAE</span><span>ISHRAE</span><span>SMACNA</span></div>
+  </div></section>
+
+  <section><div class="wrap">
+    <div class="sec-head"><div class="eyebrow">News</div><h2>Latest from Infrigidate.</h2></div>
+    <div class="news" id="homeNews"></div>
+  </div></section>
+</div>
+
+<!-- ===================== ABOUT ===================== -->
+<div class="page" data-page="about" hidden>
+  <div class="phero"><div class="bg" style="background-image:url(img/rajaram-ahu.jpg)"></div><div class="wrap">
+    <div class="crumbs"><a href="#home">Home</a> / About</div>
+    <div class="eyebrow">About us</div><h1>Execution-focused. Engineering-led.</h1>
+    <p class="lede">We deliver technically complex, compliance-driven HVAC and MEP projects across India.</p>
+  </div></div>
+  <section><div class="wrap cols2">
+    <div class="block"><div class="eyebrow">Our story</div><h2>Bridging design intent and site reality.</h2>
+      <p class="lede">Infrigidate Engineers India Pvt. Ltd. was established in 2024 in Pune by professionals from high-tech HVAC infrastructure projects. We have since extended operations to Madhya Pradesh with an office at Pithampur, and today a team of 25+ professionals delivers projects across India.</p></div>
+    <div class="block"><h3>Our operating model</h3><ul class="checks">
+      <li>Design-assist mindset supporting clients, consultants and PMCs</li>
+      <li>Strong engineering ownership from early project stages</li>
+      <li>Single-point execution responsibility</li>
+      <li>Integrated coordination of allied services</li>
+      <li>Continued involvement beyond commissioning and handover</li></ul></div>
+  </div></section>
+  <section class="frost"><div class="wrap cols2">
+    <div class="block"><div class="eyebrow">Where we add maximum value</div><h2>The projects others find hard.</h2></div>
+    <ul class="checks">
+      <li>Design collaboration with simulation studies for precision environment conditions</li>
+      <li>Schedule-sensitive and coordination-intensive projects</li>
+      <li>Projects requiring strong documentation discipline</li>
+      <li>Facilities where long-term performance matters</li>
+      <li>Compliance-driven and regulated facilities</li></ul>
+  </div></section>
+  <section><div class="wrap">
+    <div class="sec-head"><div class="eyebrow">Leadership</div><h2>Hands-on at every stage.</h2>
+      <p class="lede">Our leadership brings extensive experience in HVAC engineering, project execution and critical facility delivery, with a strong background in pharmaceutical, healthcare and industrial projects and in fast-track delivery.</p></div>
+    <div class="offices">
+      <div class="office"><div class="tag">Founder Director</div><h3>Ankit Changediya</h3><p style="color:var(--steel)">Leads design, business development and client relationships. Active in ASHRAE's Pune Chapter and student outreach.</p></div>
+      <div class="office"><div class="tag">Director, Projects</div><h3>Shubham Dhuri</h3><p style="color:var(--steel)">Leads project engineering and execution, with a background in HVAC design for pharma, food and allied industries.</p></div>
+    </div>
+  </div></section>
+  <section class="dark"><div class="wrap">
+    <div class="sec-head"><div class="eyebrow">Core focus</div><h2>What we commit to on every project.</h2></div>
+    <div class="why" id="aboutFocus"></div>
+  </div></section>
+  <section><div class="wrap split">
+    <div class="block"><div class="eyebrow">Our presence</div><h2>Two offices. Projects across India.</h2>
+      <div class="offices" style="grid-template-columns:1fr">
+        <div class="office"><div class="tag">Pune · Head office</div><address>Office 20, City Vista B, Fountain Road, Ashoka Nagar, Kharadi, Pune 411014, Maharashtra</address></div>
+        <div class="office"><div class="tag">Indore region</div><address>Office 128, First Floor, Medi-Caps Business Park, Pithampur, Madhya Pradesh</address></div>
+      </div></div>
+    <img src="img/india-map.jpg" alt="Map of India showing Infrigidate offices" loading="lazy" style="aspect-ratio:auto;max-height:560px;object-fit:contain;background:#fff">
+  </div></section>
+</div>
+
+<!-- ===================== SOLUTIONS ===================== -->
+<div class="page" data-page="solutions" hidden>
+  <div class="phero"><div class="bg" style="background-image:url(img/envalior-ahu1.jpg)"></div><div class="wrap">
+    <div class="crumbs"><a href="#home">Home</a> / Solutions</div>
+    <div class="eyebrow">Solutions</div><h1>HVAC, electrical and controls under one contract.</h1>
+    <p class="lede">We engineer the air, the power and the control logic together, so the system performs as designed from day one.</p>
+  </div></div>
+  <section><div class="wrap" id="solList"></div></section>
+</div>
+
+<!-- ===================== CAPABILITIES ===================== -->
+<div class="page" data-page="capabilities" hidden>
+  <div class="phero"><div class="bg" style="background-image:url(img/fresenius-cfd.jpg)"></div><div class="wrap">
+    <div class="crumbs"><a href="#home">Home</a> / Capabilities</div>
+    <div class="eyebrow">Capabilities</div><h1>Engineering that starts before the tender and continues after handover.</h1>
+  </div></div>
+  <section class="ice"><div class="wrap">
+    <div class="sec-head"><div class="eyebrow">Contracting life cycle</div><h2>Eight stages. One team.</h2></div>
+    <ol class="life" id="capLife"></ol>
+  </div></section>
+  <section><div class="wrap" id="capList"></div></section>
+  <section class="frost"><div class="wrap split">
+    <div class="block"><div class="eyebrow">Design simulation</div><h2>Simulation to prove design intent.</h2>
+      <p class="lede">We model temperature and air-velocity distribution before we build, so the design conditions hold on site. This matters most in test labs, warehouses and cleanrooms with tight limits.</p></div>
+    <img src="img/knorr-cfd.jpg" alt="CFD simulation of air velocity at 0.5 m level in a test lab" loading="lazy" style="aspect-ratio:auto;object-fit:contain;background:#fff">
+  </div></section>
+</div>
+
+<!-- ===================== INDUSTRIES ===================== -->
+<div class="page" data-page="industries" hidden>
+  <div class="phero"><div class="bg" style="background-image:url(img/cilicant-cleanroom.jpg)"></div><div class="wrap">
+    <div class="crumbs"><a href="#home">Home</a> / Industries</div>
+    <div class="eyebrow">Industries</div><h1>Where conditions are part of the product.</h1>
+  </div></div>
+  <section><div class="wrap" id="indList"></div></section>
+</div>
+
+<!-- ===================== PROJECTS ===================== -->
+<div class="page" data-page="projects" hidden>
+  <div class="phero"><div class="bg" style="background-image:url(img/jotun-wh2.jpg)"></div><div class="wrap">
+    <div class="crumbs"><a href="#home">Home</a> / Projects</div>
+    <div class="eyebrow">Project showcase</div><h1>Delivered on site, proven in operation.</h1>
+    <p class="lede">Turnkey HVAC, electrical and controls projects for pharma, paint, polymer and automotive R&amp;D clients.</p>
+  </div></div>
+  <section><div class="wrap">
+    <div class="filters" id="filters" role="group" aria-label="Filter projects by sector"></div>
+    <div class="projs" id="projGrid"></div>
+  </div></section>
+  <section class="frost"><div class="wrap">
+    <div class="sec-head"><div class="eyebrow">Clients</div><h2>Organisations that trust us.</h2></div>
+    <div class="logos-grid" id="logoGrid"></div>
+  </div></section>
+</div>
+
+<!-- ===================== PROJECT DETAIL ===================== -->
+<div class="page" data-page="project" hidden><div id="pd"></div></div>
+
+<!-- ===================== QUALITY ===================== -->
+<div class="page" data-page="quality" hidden>
+  <div class="phero"><div class="bg" style="background-image:url(img/knorr-ddc.jpg)"></div><div class="wrap">
+    <div class="crumbs"><a href="#home">Home</a> / Quality &amp; Safety</div>
+    <div class="eyebrow">Quality &amp; Safety</div><h1>Documented, tested and safe by design.</h1>
+  </div></div>
+  <section><div class="wrap cols2">
+    <div class="block"><div class="eyebrow">Standards &amp; compliance</div><h2>We work to recognised standards.</h2>
+      <p class="lede">Our engineering and execution practices comply with internationally accepted standards, consultant specifications and client engineering standards. Our processes are ISO certified.</p>
+      <div class="stds"><span>ISO CERTIFIED</span><span>GMP</span><span>NABH / WHO</span><span>ASHRAE</span><span>ISHRAE</span><span>SMACNA</span></div></div>
+    <div class="block"><div class="eyebrow">Environment, health &amp; safety</div><h3>Every task planned before it starts.</h3><ul class="checks">
+      <li>Work method statement prepared for every task as required</li>
+      <li>Job safety analysis</li><li>Risk assessment</li><li>Site safety measures</li>
+      <li>Clear accountability for productivity, workmanship and safety</li></ul></div>
+  </div></section>
+  <section class="frost"><div class="wrap cols2">
+    <div class="block"><div class="eyebrow">Digital project management</div><h2>Every PO, work order and bill tracked in-house.</h2>
+      <p class="lede">Our in-house project and contract management platform connects engineering, site, procurement and accounts.</p></div>
+    <ul class="checks">
+      <li>Centralised coordination across engineering, site, procurement and accounts</li>
+      <li>PO and WO tracking aligned with project schedules</li>
+      <li>Vendor billing certification and payment tracking</li>
+      <li>Material delivery status visibility</li>
+      <li>Internal approval workflows with audit trails</li>
+      <li>Early identification of commercial or procurement bottlenecks</li></ul>
+  </div></section>
+  <section><div class="wrap">
+    <div class="sec-head"><div class="eyebrow">Recognition</div><h2>Completion and appreciation letters.</h2></div>
+    <div class="letters">
+      <img src="img/letter1.jpg" alt="Client appreciation letter 1" loading="lazy">
+      <img src="img/letter2.jpg" alt="Client appreciation letter 2" loading="lazy">
+      <img src="img/letter3.jpg" alt="Client appreciation letter 3" loading="lazy">
+      <img src="img/letter4.jpg" alt="Client appreciation letter 4" loading="lazy">
+    </div>
+  </div></section>
+</div>
+
+<!-- ===================== CAREERS ===================== -->
+<div class="page" data-page="careers" hidden>
+  <div class="phero"><div class="bg" style="background-image:url(img/cilicant-site.jpg)"></div><div class="wrap">
+    <div class="crumbs"><a href="#home">Home</a> / Careers</div>
+    <div class="eyebrow">Careers</div><h1>Build the systems critical facilities depend on.</h1>
+    <p class="lede">Join a team of 25+ engineers who own outcomes from drawing to handover.</p>
+  </div></div>
+  <section><div class="wrap cols2">
+    <div class="block"><div class="eyebrow">Life at Infrigidate</div><h2>Learn fast. Own your site.</h2>
+      <ul class="checks">
+        <li>Work across design, execution, commissioning and service, not one narrow slice</li>
+        <li>Projects in pharma, cleanrooms, test labs and industrial plants</li>
+        <li>Mentoring from engineers active in ASHRAE and industry forums</li>
+        <li>Offices in Pune and Pithampur, with sites across India</li></ul>
+      <p style="color:var(--steel)">We also run talks and learning sessions for engineering students through ASHRAE student chapters.</p></div>
+    <form class="enq" id="careerForm" novalidate>
+      <label>Full name<input id="c-name" required></label>
+      <label>Phone<input id="c-phone" type="tel" required></label>
+      <label class="full">Email<input id="c-email" type="email" required></label>
+      <label>Area of interest<select id="c-area"><option>HVAC design</option><option>Site execution</option><option>Estimation &amp; tendering</option><option>Commissioning &amp; service</option><option>Electrical &amp; controls</option><option>Internship</option></select></label>
+      <label>Experience (years)<input id="c-exp" type="number" min="0" max="40"></label>
+      <label class="full">Upload CV (PDF)<input id="c-cv" type="file" accept=".pdf,.doc,.docx"></label>
+      <div class="full"><button class="btn btn-dark arrow" type="submit">Submit application</button></div>
+    </form>
+  </div></section>
+</div>
+
+<!-- ===================== CONTACT ===================== -->
+<div class="page" data-page="contact" hidden>
+  <div class="phero"><div class="bg" style="background-image:url(img/knorr-vrf1.jpg)"></div><div class="wrap">
+    <div class="crumbs"><a href="#home">Home</a> / Contact</div>
+    <div class="eyebrow">Contact us</div><h1>Talk to our engineers.</h1>
+    <p class="lede">Share your project brief, drawings or BOQ and our engineers will get back to you.</p>
+  </div></div>
+  <section><div class="wrap cols2">
+    <div class="block">
+      <div class="offices" style="grid-template-columns:1fr">
+        <div class="office"><div class="tag">Pune · Head office</div><address>Office 20, City Vista B, Fountain Road, Ashoka Nagar, Kharadi, Pune 411014, Maharashtra</address></div>
+        <div class="office"><div class="tag">Indore region</div><address>Office 128, First Floor, Medi-Caps Business Park, Pithampur, Madhya Pradesh</address></div>
+        <div class="office"><div class="tag">Phone &amp; email</div>
+          <div class="copyrow"><span>+91 95953 73634</span><button type="button" data-copy="+91 95953 73634">Copy</button></div>
+          <div class="copyrow"><span>sales.pune@infrigidate.in</span><button type="button" data-copy="sales.pune@infrigidate.in">Copy</button></div></div>
+      </div>
+    </div>
+    <form class="enq" id="enqForm" novalidate>
+      <label>Name *<input id="e-name" required></label>
+      <label>Company *<input id="e-company" required></label>
+      <label>Phone *<input id="e-phone" type="tel" required></label>
+      <label>Email *<input id="e-email" type="email" required></label>
+      <label>Enquiry type<select id="e-type"><option>New project / proposal</option><option>AMC / service</option><option>Audit / energy study</option><option>Vendor registration</option></select></label>
+      <label>Industry<select id="e-ind"><option>Pharmaceutical &amp; life sciences</option><option>Healthcare &amp; hospitals</option><option>Cleanrooms &amp; controlled environments</option><option>Industrial &amp; manufacturing</option><option>Warehousing &amp; logistics</option><option>Commercial &amp; institutional</option></select></label>
+      <label class="full">Project details<textarea id="e-msg" placeholder="Location, area (sq ft), design conditions, timeline"></textarea></label>
+      <label class="full">Attach drawings or BOQ<input id="e-file" type="file"></label>
+      <div class="full"><button class="btn btn-dark arrow" type="submit">Send enquiry</button></div>
+    </form>
+  </div></section>
+</div>
+
+</main>
+
+<div class="band"><div class="wrap">
+  <h2>Planning a critical facility, or fixing one that underperforms?</h2>
+  <a class="btn btn-primary arrow" href="#contact">Talk to an engineer</a>
+</div></div>
+
+<footer class="site"><div class="wrap">
+  <div class="fgrid">
+    <div><a class="logo" href="#home"><img src="img/infrigidate-logo-white.png" alt="Infrigidate"></a>
+      <p>HVAC &amp; integrated MEP contracting company delivering technically complex, compliance-driven projects across India.</p></div>
+    <div><h4>Solutions</h4><ul><li><a href="#solutions">HVAC Systems</a></li><li><a href="#solutions">Cleanroom Solutions</a></li><li><a href="#solutions">Electrical Solutions</a></li><li><a href="#solutions">BMS &amp; Controls</a></li><li><a href="#solutions">Energy Management</a></li></ul></div>
+    <div><h4>Company</h4><ul><li><a href="#about">About Us</a></li><li><a href="#capabilities">Capabilities</a></li><li><a href="#projects">Projects</a></li><li><a href="#quality">Quality &amp; Safety</a></li><li><a href="#careers">Careers</a></li></ul></div>
+    <div><h4>Offices</h4><ul>
+      <li>Office 20, City Vista B, Fountain Road, Kharadi, Pune 411014</li>
+      <li>Office 128, Medi-Caps Business Park, Pithampur, MP</li>
+      <li>+91 95953 73634</li><li>sales.pune@infrigidate.in</li></ul></div>
+  </div>
+  <div class="bottom"><span>© <span id="yr">2026</span> Infrigidate Engineers India Pvt. Ltd. · CIN U22209PN2024PTC230478</span><span>Privacy Policy · Terms of Use</span></div>
+</div></footer>
+
+<script>
+const ICON={
+ hvac:'<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="12" width="40" height="24"/><circle cx="16" cy="24" r="7"/><path d="M16 17v14M9 24h14M28 18h12M28 24h12M28 30h12"/></svg>',
+ clean:'<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 8h36v32H6z"/><path d="M6 16h36M14 8v8M24 8v8M34 8v8"/><path d="M16 26l4 4 4-4 4 4 4-4" /></svg>',
+ elec:'<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><rect x="10" y="4" width="28" height="40"/><path d="M26 12l-6 12h8l-6 12"/></svg>',
+ bms:'<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="8" width="40" height="26"/><path d="M16 42h16M24 34v8M10 26l8-8 6 5 12-11"/></svg>',
+ ems:'<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 40a18 18 0 1132 0"/><path d="M24 40l9-14"/><circle cx="24" cy="40" r="2.5"/><path d="M14 30h2M32 30h2M24 20v2"/></svg>'
+};
+const SOL=[
+ {id:'hvac',t:'HVAC Systems',d:'Precision air-conditioning for process, product and people.',items:['Chilled water systems','Hot water systems','VRF','DX','Dehumidification','Evaporative & hybrid cooling','Ventilation','AHUs & AHU-cum-dehumidifiers'],img:'rajaram-plantroom'},
+ {id:'clean',t:'Cleanroom Solutions',d:'Turnkey controlled environments with HVAC, controls and validation support.',items:['Grade C & D areas','Low-RH rooms down to 35% RH','Testing & QC labs','Pressure zoning','Cleanroom testing support'],img:'cilicant-cleanroom'},
+ {id:'elec',t:'Electrical Solutions',d:'Power distribution engineered alongside the HVAC it serves.',items:['LT panels','HT panels','Starter panels','CRP panels','Cabling'],img:'knorr-vrf2'},
+ {id:'bms',t:'BMS & Controls',d:'Control logic that holds conditions and makes operation simple.',items:['DDC controllers','Standalone controllers','Sensors','Control schematics & logic','Integrated testing with BMS'],img:'knorr-ddc'},
+ {id:'ems',t:'Energy Management (EMS & IoT)',d:'See, control and cut energy use in real time.',items:['Real-time energy monitoring','Peak demand management','Energy analytics','Remote control & system visibility','Smart temperature, humidity & energy sensors','Energy optimisation & lower operating cost'],img:'envalior-ahu3'}
+];
+const IND=[
+ {t:'Pharmaceutical & Life Sciences',s:'GMP · Grade C/D · tight T/RH',img:'rajaram-plant',body:'GMP-compliant HVAC and cleanroom systems with audit-ready documentation, and operating modes that cut energy use in non-continuous areas.',p:['rajaram','fresenius']},
+ {t:'Healthcare & Hospitals',s:'NABH / WHO · pressure regimes',img:'rajaram-ahu',body:'HVAC for operating theatres, ICUs and hospital support areas, with filtration, pressure zoning and BMS monitoring designed for 24x7 uptime.',p:[]},
+ {t:'Cleanrooms & Controlled Environments',s:'Low RH · particle control',img:'cilicant-cleanroom',body:'Dry rooms, QC and testing labs and classified cleanrooms delivered turnkey, including dehumidification and humidity control.',p:['cilicant','envalior']},
+ {t:'Industrial & Manufacturing',s:'Process loads · 24x7 operation',img:'jotun-plant',body:'Chiller-based HVAC, electrical and CRP panels and endurance-lab conditioning for manufacturing and R&D facilities.',p:['jotun','knorr']},
+ {t:'Warehousing & Logistics',s:'Temperature-controlled storage',img:'jotun-wh1',body:'Controlled-temperature storage with seasonal switching between chiller and VRF to keep running costs low.',p:['fresenius']},
+ {t:'Commercial & Institutional',s:'Comfort · IAQ · energy',img:'envalior-plant',body:'VRF, DX and ventilation systems with energy monitoring for offices and institutional buildings.',p:[]}
+];
+const LIFE=[
+ ['Tender & pre-tender engineering','Value engineering, load verification, make-wise compliance'],
+ ['Budgeting & cost engineering','Transparent BOQ and cost control'],
+ ['Detailed engineering & shop drawings','Ducting, piping, plant room and control schematics'],
+ ['Planning & execution','Single-point responsibility and disciplined site management'],
+ ['Testing, commissioning & validation','TAB, performance validation, BMS-integrated testing'],
+ ['After-sales service & maintenance','DLP support, preventive and breakdown maintenance'],
+ ['Retrofit engineering','Upgrades and capacity additions in live facilities'],
+ ['Retro-energy engineering','Energy retrofits that lower operating cost']
+];
+const CAP=[
+ {t:'Tender Engineering',l:['Value engineering without compromising design','Constructability review and suggestions','Simulation against design intent','Verification of heat load and associated HVAC calculations','Detail engineering including OEM feasibility','Make-wise compliance and deviation statements']},
+ {t:'Detailed Engineering & Documentation',l:['HVAC shop drawings: ducting, piping, manifold, foundation layout, plant room and valve station','Technical submittals per tender documents and OEM datasheets','Coordination drawing review across HVAC, electrical, architecture and fire','Review of AHU, area and pressure zoning layouts','Control schematics and control logic per OEM feasibility','Work method statements, O&M manuals and handover documents']},
+ {t:'Value Engineering',l:['Optimised system selection','Accurate load rationalisation','Energy-efficient equipment selection','Duct and piping optimisation','Material and specification optimisation','Lifecycle cost analysis (LCC)','Standardisation and modular design','Retrofit and upgrade evaluation']},
+ {t:'Testing, Commissioning & Validation',l:['TAB procedures','Performance validation','Cleanroom testing support','Integrated testing with BMS','Consultant and third-party witnessing and documentation']},
+ {t:'After-Sales Service & AMC',l:['Defect Liability Period (DLP) support','Preventive and breakdown maintenance','Performance audits and energy optimisation studies','System retrofits and upgrades','Operator training and technical handover']}
+];
+const WHY=[
+ ['Design & simulation competency','Simulation studies to confirm precision conditions before build.'],
+ ['Execution-first engineering','Designs that are buildable on site, on schedule.'],
+ ['Single-point accountability','One technical owner from tender to handover.'],
+ ['Documentation-driven delivery','Submittals, method statements and O&M manuals as standard.'],
+ ['High-discipline site management','Planned, supervised and safe execution.'],
+ ['Commissioning-focused approach','Systems proven against design criteria, not just installed.'],
+ ['Risk-aware execution','Bottlenecks flagged early, commercially and technically.'],
+ ['Long-term performance mindset','We stay involved after handover.']
+];
+const FOCUS=[
+ ['End-to-end HVAC capability',''],['Strong technical expertise',''],['Quality-driven execution',''],['On-time project delivery',''],
+ ['Energy-efficient solutions',''],['Site management & safety',''],['Reliable after-sales & AMC',''],['Transparent BOQ & cost control','']
+];
+const PROJ=[
+ {id:'rajaram',c:'Rajaram Consumer Care Pvt Ltd',sec:'Pharmaceutical',loc:'Sangli, Maharashtra',type:'Pharmaceutical manufacturing, Grade C & D',dur:'3 months',
+  sys:'AHUs integrated with chiller, heat pump, VRF and electrical heaters',crit:['NMT 25 °C','RH NMT 60 %','Grade C & D'],scope:'Turnkey HVAC, electrical & controls',
+  ch:'Several production areas do not run continuously, so running the full chiller plant around the clock would waste energy.',
+  so:'We built a dual-mode operating philosophy. At night the AHUs run on VRF with electrical heaters; by day they switch to chiller and hot water. A DDC control system changes over the whole plant at the press of one button. After this project the client awarded us Phases V and VI, adding three more AHUs.',
+  imgs:['rajaram-plant','rajaram-ahu','rajaram-plantroom','rajaram-duct']},
+ {id:'fresenius',c:'Fresenius Kabi India Pvt Ltd',sec:'Pharmaceutical',loc:'MIDC Ranjangaon, Maharashtra',type:'Finished-goods warehouse',dur:'2 months',
+  sys:'AHU integrated with VRF system',crit:['NMT 25 °C','RH not controlled'],scope:'Turnkey HVAC, electrical & controls',
+  ch:'The warehouse needed to hold temperature through peak summer without overloading the site chiller utility.',
+  so:'The AHU runs on the chiller utility in the non-peak season and on VRF in the peak season, achieved by modifying the air-distribution system. Simulation confirmed uniform temperature across the storage racks.',
+  imgs:['fresenius-plant','fresenius-cfd']},
+ {id:'cilicant',c:'Cilicant Pvt Ltd',sec:'Pharmaceutical packaging',loc:'Pune, Maharashtra',type:'Cleanroom for moisture-absorbent material',dur:'3 months',
+  sys:'AHUs with VRF and dehumidifier for screw mixing; AHUs with VRF supply-air kit for RH control',crit:['NMT 21 °C','RH NMT 35 %','RH NMT 55 %','Grade D'],scope:'Turnkey HVAC, electrical & controls',
+  ch:'The screw-mixing area handles hygroscopic powder. Any moisture pick-up degrades product quality, and wet powder at the return-air riser clogs the filters.',
+  so:'We designed dedicated dehumidified AHUs to hold the mixing area at 35 % RH or below, with separate VRF-based AHUs for the general Grade D areas. The powder stays dry through the return-air path, protecting both product and filters.',
+  imgs:['cilicant-plant','cilicant-cleanroom','cilicant-site']},
+ {id:'envalior',c:'Envalior India Pvt Ltd (formerly DSM)',sec:'Polymer engineering',loc:'MIDC Ranjangaon, Maharashtra',type:'Testing & QC lab for engineering plastics',dur:'2 months',
+  sys:'AHU-cum-dehumidifiers integrated with VRF and humidifier, with controls',crit:['23 ± 2 °C','50 ± 5 % RH','Dark room'],scope:'Turnkey cleanroom, HVAC, electrical & controls',
+  ch:'The existing lab could not hold the required temperature and humidity. The lab tests engineering plastics supplied to Apple, so conditions had to be exact.',
+  so:'After reviewing our project portfolio, Envalior awarded us the full turnkey rebuild. AHU-cum-dehumidifiers with VRF and humidification now hold 23 ± 2 °C and 50 ± 5 % RH, including a dark room.',
+  imgs:['envalior-plant','envalior-ahu1','envalior-ahu2','envalior-ahu3']},
+ {id:'jotun',c:'Jotun India Pvt Ltd',sec:'Paints',loc:'MIDC Ranjangaon, Maharashtra',type:'Plant and warehouse HVAC',dur:'4 months',
+  sys:'AHUs integrated with air-cooled chiller',crit:['NMT 25 °C','0.06 Btu/ft²·hr wall gain'],scope:'Turnkey HVAC, electrical & controls including CRP panels',
+  ch:'A large storage volume had to stay below 25 °C with a chiller plant sized for efficiency.',
+  so:'We restricted heat transmission through each wall to 0.06 Btu/ft²·hr, which kept the cooling load and chiller size down. Supply ducting runs the full length of the racking for even distribution.',
+  imgs:['jotun-plant','jotun-wh1','jotun-wh2','jotun-wh3','jotun-wh4']},
+ {id:'knorr',c:'Knorr-Bremse Technology Center India Pvt Ltd',sec:'Automotive R&D',loc:'Pune, Maharashtra',type:'Rail compressor endurance test lab · 8,000 h continuous',dur:'4 months',
+  sys:'AHU integrated with VRF system',crit:['NMT 25 °C','Air velocity < 1 m/s','24x7'],scope:'Turnkey HVAC, electrical & controls',
+  ch:'Around 90 % of the lab load is constant and the lab runs 24 hours a day, but VRF units are normally designed for about 12 hours of running a day.',
+  so:'We integrated the controls to equalise running time across all VRF units at 10 hours a day each, so the lab runs continuously without overworking any unit. CFD simulation confirmed air velocity stays below 1 m/s at test height.',
+  imgs:['knorr-plant','knorr-cfd','knorr-vrf1','knorr-vrf2','knorr-vrf3','knorr-vrf4','knorr-ddc']}
+];
+const LOGOS=['rajaram','fresenius','knorr-bremse','jotun','cilicant','vertiv','conrad','encube','lauritz-knudsen','quick-heal','nutrivita','rajaram-solvex'];
+const NEWS=[
+ ['Company','Infrigidate starts operations in Madhya Pradesh','A new office at Medi-Caps Business Park, Pithampur, serves pharmaceutical, healthcare, cleanroom and industrial clients in central India.'],
+ ['Projects','Appreciation from Fresenius Kabi and Rajaram','Clients recognised our design-to-commissioning delivery on critical HVAC projects, and Rajaram awarded follow-on Phases V and VI.'],
+ ['Community','Expert talk at MIT World Peace University','Our Founder Director spoke on careers in HVAC&R at the installation of the ASHRAE student chapter.']
+];
+const $=s=>document.querySelector(s);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+function projCard(p){return `<a class="pcard" href="#project-${p.id}"><img src="img/${p.imgs[0]}.jpg" alt="${esc(p.c)} facility" loading="lazy"><div class="b"><div class="sec">${esc(p.sec)} · ${esc(p.loc.split(',')[0])}</div><h3>${esc(p.c)}</h3><p>${esc(p.type)}</p><div class="spec">${p.crit.map(c=>`<span>${esc(c)}</span>`).join('')}</div></div></a>`}
+
+$('#homeSolutions').innerHTML=SOL.map(s=>`<a class="tile" href="#solutions"><span class="ic">${ICON[s.id]}</span><h3>${esc(s.t)}</h3><p>${esc(s.d)}</p><span class="more">Learn more →</span></a>`).join('');
+$('#homeInds').innerHTML=IND.map(i=>`<a class="ind" href="#industries"><img src="img/${i.img}.jpg" alt="" loading="lazy"><div><h3>${esc(i.t)}</h3><small>${esc(i.s)}</small></div></a>`).join('');
+const lifeHtml=LIFE.map(l=>`<li><b>${esc(l[0])}</b><span>${esc(l[1])}</span></li>`).join('');
+$('#homeLife').innerHTML=lifeHtml;$('#capLife').innerHTML=lifeHtml;
+$('#homeProjs').innerHTML=['jotun','rajaram','knorr'].map(id=>projCard(PROJ.find(p=>p.id===id))).join('');
+$('#homeWhy').innerHTML=WHY.map(w=>`<div><b>${esc(w[0])}</b><span>${esc(w[1])}</span></div>`).join('');
+$('#aboutFocus').innerHTML=FOCUS.map(w=>`<div><b>${esc(w[0])}</b></div>`).join('');
+const lg=LOGOS.map(l=>`<img src="img/logo-${l}.png" alt="${l.replace(/-/g,' ')} logo">`).join('');
+$('#marquee').innerHTML=lg+lg.replace(/alt="[^"]*"/g,'alt="" aria-hidden="true"');
+$('#logoGrid').innerHTML=LOGOS.map(l=>`<div><img src="img/logo-${l}.png" alt="${l.replace(/-/g,' ')} logo" loading="lazy"></div>`).join('');
+$('#homeNews').innerHTML=NEWS.map(n=>`<article><time>${esc(n[0])}</time><h3>${esc(n[1])}</h3><p>${esc(n[2])}</p></article>`).join('');
+
+$('#solList').innerHTML=SOL.map((s,i)=>`<div class="sol"><div class="block"><span class="num">SOLUTION ${String(i+1).padStart(2,'0')}</span><span class="ic" style="width:48px;color:var(--brand)">${ICON[s.id]}</span><h2 style="font-size:1.9rem">${esc(s.t)}</h2><p class="lede">${esc(s.d)}</p></div><div class="block"><img src="img/${s.img}.jpg" alt="" loading="lazy" style="width:100%;aspect-ratio:16/8;object-fit:cover"><div class="chips">${s.items.map(x=>`<span>${esc(x)}</span>`).join('')}</div></div></div>`).join('');
+$('#capList').innerHTML=CAP.map(c=>`<div class="sol"><div class="block"><h2 style="font-size:1.8rem">${esc(c.t)}</h2></div><ul class="checks">${c.l.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>`).join('');
+$('#indList').innerHTML=IND.map(i=>{const ps=i.p.map(id=>PROJ.find(p=>p.id===id));return `<div class="sol"><div class="block"><img src="img/${i.img}.jpg" alt="" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:cover"></div><div class="block"><div class="eyebrow">${esc(i.s)}</div><h2 style="font-size:1.9rem">${esc(i.t)}</h2><p class="lede">${esc(i.body)}</p>${ps.length?`<div class="chips">${ps.map(p=>`<a href="#project-${p.id}" style="text-decoration:none"><span>Case study: ${esc(p.c)} →</span></a>`).join('')}</div>`:''}</div></div>`}).join('');
+
+// project filters
+const secs=['All',...new Set(PROJ.map(p=>p.sec))];let cur='All';
+function drawGrid(){$('#projGrid').innerHTML=PROJ.filter(p=>cur==='All'||p.sec===cur).map(projCard).join('');
+ $('#filters').innerHTML=secs.map(s=>`<button type="button" aria-pressed="${s===cur}" data-f="${esc(s)}">${esc(s)}</button>`).join('')}
+$('#filters').addEventListener('click',e=>{const b=e.target.closest('button');if(b){cur=b.dataset.f;drawGrid()}});drawGrid();
+
+function detail(p){
+ const i=PROJ.indexOf(p),nx=PROJ[(i+1)%PROJ.length];
+ $('#pd').innerHTML=`<div class="phero"><div class="bg" style="background-image:url(img/${p.imgs[0]}.jpg);opacity:.35"></div><div class="wrap">
+ <div class="crumbs"><a href="#home">Home</a> / <a href="#projects">Projects</a> / ${esc(p.c)}</div>
+ <div class="eyebrow">${esc(p.sec)} · Case study</div><h1>${esc(p.c)}</h1><p class="lede">${esc(p.type)}</p></div></div>
+ <section><div class="wrap pd-top">
+  <div class="story"><div><h3>The challenge</h3><p>${esc(p.ch)}</p></div><div><h3>Our solution</h3><p>${esc(p.so)}</p></div><div><h3>System</h3><p>${esc(p.sys)}</p></div></div>
+  <aside class="nameplate" aria-label="Project data"><header><span>Project data</span><span>${esc(p.id.toUpperCase())}</span></header><dl>
+   <dt>Client</dt><dd>${esc(p.c)}</dd><dt>Sector</dt><dd>${esc(p.sec)}</dd><dt>Location</dt><dd>${esc(p.loc)}</dd>
+   <dt>Duration</dt><dd>${esc(p.dur)}</dd><dt>Scope</dt><dd>${esc(p.scope)}</dd><dt>Design criteria</dt><dd>${p.crit.map(esc).join('<br>')}</dd></dl></aside>
+ </div></section>
+ <section class="frost"><div class="wrap"><div class="sec-head"><div class="eyebrow">Execution</div><h2>Project gallery.</h2></div>
+  <div class="gallery">${p.imgs.map(im=>`<figure><img src="img/${im}.jpg" alt="${esc(p.c)} project photo" loading="lazy"><figcaption>${/cfd/.test(im)?'Simulation to confirm design intent':'Site execution'}</figcaption></figure>`).join('')}</div></div></section>
+ <section><div class="wrap" style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center">
+  <a class="btn btn-line" href="#projects">← All projects</a><a class="btn btn-dark arrow" href="#project-${nx.id}">Next: ${esc(nx.c)}</a></div></section>`;
+}
+
+// router
+const nav=$('#nav');
+function route(){
+ let h=(location.hash||'#home').slice(1)||'home',page=h;
+ if(h.startsWith('project-')){const p=PROJ.find(x=>'project-'+x.id===h);if(p){detail(p);page='project'}else page='projects'}
+ if(!document.querySelector(`.page[data-page="${page}"]`))page='home';
+ document.querySelectorAll('.page').forEach(el=>{const on=el.dataset.page===page;el.hidden=!on;if(on){el.classList.remove('fade');void el.offsetWidth;el.classList.add('fade')}});
+ const act=page==='project'?'projects':page;
+ nav.querySelectorAll('a').forEach(a=>{if(a.getAttribute('href')==='#'+act)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')});
+ nav.classList.remove('open');$('#burger').setAttribute('aria-expanded','false');
+ window.scrollTo(0,0);
+}
+window.addEventListener('hashchange',route);route();
+$('#burger').addEventListener('click',()=>{const o=nav.classList.toggle('open');$('#burger').setAttribute('aria-expanded',o)});
+
+// forms
+function wire(id,msg){const f=$(id);f.addEventListener('submit',e=>{e.preventDefault();
+ const req=[...f.querySelectorAll('[required]')];const bad=req.find(x=>!x.value.trim()||(x.type==='email'&&!/^\S+@\S+\.\S+$/.test(x.value)));
+ f.querySelector('.formmsg')?.remove();const d=document.createElement('div');d.className='formmsg';
+ if(bad){d.style.background='#fdecea';d.style.color='#8a1f17';d.textContent='Please fill in '+bad.closest('label').firstChild.textContent.replace('*','').trim().toLowerCase()+' to continue.';bad.focus()}
+ else{d.textContent=msg;f.reset()}
+ f.appendChild(d)})}
+wire('#enqForm','Preview only: on the live site this enquiry will be emailed to sales.pune@infrigidate.in.');
+wire('#careerForm','Preview only: on the live site this application will be emailed to the HR team.');
+document.querySelectorAll('[data-copy]').forEach(b=>b.addEventListener('click',()=>{navigator.clipboard.writeText(b.dataset.copy).then(()=>{b.textContent='Copied'},()=>{const r=document.createRange();r.selectNodeContents(b.previousElementSibling);getSelection().removeAllRanges();getSelection().addRange(r);b.textContent='Selected'});setTimeout(()=>b.textContent='Copy',1800)}));
+$('#yr').textContent=new Date().getFullYear();
+</script>
+
+</body>
+</html>
